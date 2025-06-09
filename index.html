@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto Portfólio do Wesley, desenvolvedor web fullstack.">
+    <meta name="author" content="Wesley Lima">
+    <meta name="keywords" content="portfólio, desenvolvedor, web, fullstack, Wesley Lima, HTML, CSS, JavaScript">
+    <link rel="icon" href="./assets/img/favicon.svg" />
+    <title>Portfólio do Wesley</title>
+</head>
+<body>
+
+    <!-- Cabeçalho(header) da página -->
+    <header>
+
+        <div id="header_content">
+            <!-- Titulo do cabeçalho -->
+            <div id="titulo">
+                <a href="#">Universo</a>
+            </div>
+
+            <!-- Menu -->
+            <div id="menu">
+
+                <!-- Barra de Navegação -->
+                <nav>
+                    <!-- Lista não ordenada = ul -->
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção principal da página -->
+    <main>
+
+        <!-- Seção Home -->
+        <section id="home">
+
+            <article id="home_texto">
+
+                <h4>Bem vindo ao Novo Universo</h4>
+                <h1>Mundos diferentes para pessoas diferentes</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique 
+                    non cumque praesentium cupiditate accusamus soluta odio tempore 
+                    maiores vel laudantium suscipit, quae facilis quasi molestiae modi 
+                    accusantium molestias expedita in.
+                </p>
+                <a href="https://github.com/Wezzlim" target="_blank">Explorar </a>
+
+            </article>
+
+            <article id="home_imagem">
+                <img src="./assets/img/astronauta.svg" alt="Capacete Animado do Astronauta">
+            </article>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="about">
+
+            <img src="./assets/img/user_01.svg" alt="Foto do perfil do github">
+
+            <article id="about_texto">
+                <h1>Sobre mim</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique 
+                    non cumque praesentium cupiditate accusamus soluta odio tempore 
+                    maiores vel laudantium suscipit, quae facilis quasi molestiae modi 
+                    accusantium molestias expedita in.
+                </p>
+
+                <div id="about_github">
+                    <a href="https://github.com/Wezzlim" target="_blank">Explorar </a>
+                    <p>50 Seguidores</p>
+                    <p>60 Repositórios</p>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Seção Contatos -->
+        <section id="contact">
+            <h4>Contate-me</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique 
+                non cumque praesentium cupiditate accusamus soluta odio tempore 
+                maiores vel laudantium suscipit, quae facilis quasi molestiae modi 
+                accusantium molestias expedita in.
+            </p>
+
+            <div id="icones_redes_sociais">
+                <a href="https://github.com/Wezzlim" target="_blank">
+                    <img src="./assets/img/github.svg" alt="Ícone do Github">
+                </a>
+
+                <a href="https://www.linkedin.com/in/wesley--lima" target="_blank">
+                    <img src="./assets/img/linkedin.svg" alt="Ícone do Linkedin">
+                </a>
+
+                <a href="" target="_blank">
+                    <img src="./assets/img/instagram.svg" alt="Ícone do Instagram">
+                </a>
+            </div>
+
+            <form action="" method="POST">
+
+                <label for="nome">Nome</label>
+                <input
+                    id="nome"
+                    name="nome"
+                    type="text"
+                    placeholder="Digite o seu nome"
+                >
+
+                <label for="email">Email</label>
+                <input
+                id="email"
+                name="email"
+                type="text"
+                placeholder="Digite um endereço de email válido"
+                >
+
+                <label for="assunto">Assunto</label>
+                <input
+                id="assunto"
+                name="assunto"
+                type="text"
+                placeholder="Digite o assunto"
+                >
+
+                <span id="txtAssunto"></span>
+
+                <label for="mensagem">Mensagem</label>
+
+                <textarea 
+                    id="mensagem"
+                    name="mensagem"
+                    placeholder="Digite a sua mensagem"
+                >
+                </textarea>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Rodapé(footer) da página -->
+    <footer>
+        Desenvolvido por Wesley Lima ✔ - 2025
+    </footer>
+</body>
+</html>
