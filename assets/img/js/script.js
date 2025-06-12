@@ -1,8 +1,8 @@
 const about = document.querySelector("#about");
 
-const formulario = document.querySelector('#formulario')
+const formulario = document.querySelector('#formulario');
 
-const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
  
 async function getAptGithub() 
 {
@@ -46,7 +46,7 @@ formulario.addEventListener("submit", function(event)
     const campoNome = document.querySelector("#nome")
     const txtNome = document.querySelector("#txtNome")
 
-    if(campoNome.value.lenght < 3)
+    if(campoNome.value.length < 3)
     {
         txtNome.innerHTML = "O Nome deve ter no mínimo 3 caracteres"
         campoNome.focus()
@@ -74,7 +74,7 @@ formulario.addEventListener("submit", function(event)
     const campoAssunto = document.querySelector("#assunto")
     const txtAssunto = document.querySelector("#txtAssunto")
 
-    if(campoAssunto.value.lenght < 3)
+    if(campoAssunto.value.length < 5)
     {
         txtAssunto.innerHTML = "O Assunto deve ter no mínimo 5 caracteres"
         campoAssunto.focus()
