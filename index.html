@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    <!-- Servidores de Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+    <!-- Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portfólio do Wesley, desenvolvedor web fullstack.">
     <meta name="author" content="Wesley Lima">
     <meta name="keywords" content="portfólio, desenvolvedor, web, fullstack, Wesley Lima, HTML, CSS, JavaScript">
     <link rel="icon" href="./assets/img/favicon.svg" />
+
+    <!-- Link para o arquivo CSS -->
+     <link rel="stylesheet" href="./assets/img/css/style.css">
+
     <title>Portfólio do Wesley</title>
 </head>
 <body>
 
     <!-- Cabeçalho(header) da página -->
-    <header>
+    <header class="flex menu_container">
 
-        <div id="header_content">
+        <div id="header_content" class="menu_content">
             <!-- Titulo do cabeçalho -->
             <div id="titulo">
                 <a href="#">Universo</a>
             </div>
 
             <!-- Menu -->
-            <div id="menu">
+            <div id="menu" class="flex">
 
                 <!-- Barra de Navegação -->
                 <nav>
                     <!-- Lista não ordenada = ul -->
-                    <ul>
+                    <ul class="flex menu_list">
                         <li><a href="#">Home</a></li>
                         <li><a href="#about">Sobre</a></li>
                         <li><a href="#contact">Contatos</a></li>
@@ -40,9 +51,9 @@
     <main>
 
         <!-- Seção Home -->
-        <section id="home">
+        <section id="home" class="flex home_container">
 
-            <article id="home_texto">
+            <article id="home_texto" class="flex home_content">
 
                 <h4>Bem vindo ao Novo Universo</h4>
                 <h1>Mundos diferentes para pessoas diferentes</h1>
@@ -51,19 +62,19 @@
                     maiores vel laudantium suscipit, quae facilis quasi molestiae modi 
                     accusantium molestias expedita in.
                 </p>
-                <a href="https://github.com/Wezzlim" target="_blank">Explorar </a>
+                <a href="https://github.com/Wezzlim" target="_blank" class="botao">Explorar </a>
 
             </article>
 
-            <article id="home_imagem">
+            <article id="home_imagem" class="flex home_content">
                 <img src="./assets/img/astronauta.svg" alt="Capacete Animado do Astronauta">
             </article>
         </section>
 
         <!-- Seção Sobre -->
-        <section id="about">
+        <section id="about" class="flex about_container">
 
-            <img src="./assets/img/user_01.svg" alt="Foto do perfil do github">
+                <img src="./assets/img/user_01.svg" alt="Foto do perfil do github">
 
             <article id="about_texto">
                 <h1>Sobre mim</h1>
@@ -73,8 +84,8 @@
                     accusantium molestias expedita in.
                 </p>
 
-                <div id="about_github">
-                    <a href="https://github.com/Wezzlim" target="_blank">Explorar </a>
+                <div id="about_github" class="flex about_github">
+                    <a href="https://github.com/Wezzlim" target="_blank" class="botao">Github </a>
                     <p>50 Seguidores</p>
                     <p>60 Repositórios</p>
                 </div>
@@ -83,27 +94,31 @@
         </section>
 
         <!-- Seção Contatos -->
-        <section id="contact">
+        <section id="contact" class="contato_container">
+
+        <article id="redes_sociais" class="contato_content">
             <h4>Contate-me</h4>
+            
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique 
                 non cumque praesentium cupiditate accusamus soluta odio tempore 
                 maiores vel laudantium suscipit, quae facilis quasi molestiae modi 
                 accusantium molestias expedita in.
             </p>
 
-            <div id="icones_redes_sociais">
-                <a href="https://github.com/Wezzlim" target="_blank">
+            <div id="icones_redes_sociais" class="social_container">
+                <a href="https://github.com/Wezzlim" target="_blank" class="social_icon">
                     <img src="./assets/img/github.svg" alt="Ícone do Github">
                 </a>
 
-                <a href="https://www.linkedin.com/in/wesley--lima" target="_blank">
+                <a href="https://www.linkedin.com/in/wesley--lima" target="_blank" class="social_icon">
                     <img src="./assets/img/linkedin.svg" alt="Ícone do Linkedin">
                 </a>
 
-                <a href="" target="_blank">
+                <a href="" target="_blank" class="social_icon">
                     <img src="./assets/img/instagram.svg" alt="Ícone do Instagram">
                 </a>
             </div>
+        </article> 
 
             <form action="" method="POST">
 
@@ -142,9 +157,10 @@
                 >
                 </textarea>
 
-                <button type="submit">Enviar</button>
+                <button class="botao" type="submit">Enviar</button>
 
             </form>
+           
         </section>
 
     </main>

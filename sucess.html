@@ -7,17 +7,23 @@
     <meta name="author" content="Wesley Lima">
     <meta name="keywords" content="portfólio, desenvolvedor, web, fullstack, Wesley Lima, HTML, CSS, JavaScript">
     <link rel="icon" href="./assets/img/favicon.svg" />
+
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="./assets/img/css/style.css">
+
     <title>Confirmação de Envio</title>
 </head>
 <body>
 
     <!-- Cabeçalho(header) da página -->
-    <header>
+    <header class="flex menu_container">
 
-        <div id="header_content">
+        <div id="header_content" class="menu_content">
 
-            <div id="titulo">
-                <a href="#">Universo</a>
+            <!-- Div com o conteudo do cabeçalho -->
+            <div id="menu_content_sucess">
+                <!-- Link -->
+                <a href="index.html">Universo</a>
             </div>
 
         </div>
@@ -27,15 +33,15 @@
     <!-- Seção principal da página -->
     <main>
 
-        <!-- Seção Confirmação Email -->
-        <section id="email">
+        <!-- Seção HOME -->
+        <section id="home" class="flex home_container_sucess">
 
-            <article id="email_texto">
+            <article id="home_sucess" class="flex">
         
                 <h1>Email enviado com sucesso!</h1>
                 <p>Obrigado por entrar em contato, logo mais retornarei a sua mensagem</p>
 
-                <button type="submit">Voltar</button>
+                <a class="botao" href="index.html">Voltar</a>
             </article>
         
         </section>
